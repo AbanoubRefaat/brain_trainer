@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bt_Answer2"
+        android:layout_width="198dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"
+        android:onClick="chooseAnswer"
+        android:text="Button"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Answer4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_Answer1"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Score" />
+
+    <TextView
+        android:id="@+id/tv_Score"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center"
+        android:text="0/0"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_Question"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Question"
+        android:layout_width="139dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="71dp"
+        android:gravity="center"
+        android:text="2 + 5"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Answer2"
+        app:layout_constraintEnd_toStartOf="@+id/tv_Score"
+        app:layout_constraintStart_toEndOf="@+id/tv_Timer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_Timer"
+        android:layout_width="73dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        android:text="30s"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt_Answer4"
+        android:layout_width="198dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="chooseAnswer"
+        android:text="Button"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_Answer3"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Answer2" />
+
+    <Button
+        android:id="@+id/bt_Answer3"
+        android:layout_width="198dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="7dp"
+        android:onClick="chooseAnswer"
+        android:text="Button"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_Answer4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Answer1" />
+
+    <Button
+        android:id="@+id/bt_Answer1"
+        android:layout_width="198dp"
+        android:layout_height="224dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="7dp"
+        android:onClick="chooseAnswer"
+        android:text="23"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_Answer3"
+        app:layout_constraintEnd_toStartOf="@+id/bt_Answer2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Timer" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="158dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="23dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Answer4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/playAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="35dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_result"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_Answer3" />
+
+</android.support.constraint.ConstraintLayout>
